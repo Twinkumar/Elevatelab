@@ -1,0 +1,11 @@
+Step 1: Found local ip4 address using "ipconfig" on command prompt(for windows)
+step 2:run the command nmap -A <ip4 address> at the command line and execute it
+step 3:save or write down the ip addresses and open ports on the computer
+step 4:use wireshark to analyse the package.start the process
+step 5:execute "nmap -sS <ip>" this command on nmap while the wireshark is capurting the packet
+step 6:stop the packets capturing and save this
+
+Port	Service	                         Risks	Mitigation
+135  	msrpc	                 RCE if unpatched; service enumeration	Patch Windows; restrict LAN
+139	  netbios-ssn	           Info leakage; unauthorized file access	Disable NetBIOS; patch SMB
+445	  microsoft-ds	         RCE (EternalBlue/WannaCry); SMB attacks	Patch Windows; LAN only
