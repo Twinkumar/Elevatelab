@@ -1,0 +1,17 @@
+Attacker Tactics:
+⦁	Creating urgency – using threatening or time-sensitive messages to pressure victims into quick action.
+⦁	Using unverified or spoofed email IDs – sending emails from fake addresses that look similar to trusted domains.
+⦁	Embedding malicious links – hiding dangerous URLs behind text or shortened links to mislead users.
+Prevention Steps:
+⦁	Always verify the sender’s email ID carefully before responding.
+⦁	Never click on suspicious links or attachments unless the source is trusted.
+⦁	Look out for poor grammar, spelling errors, or unusual email headers.
+⦁	Use link-checking services like URLVoid to test URLs before visiting them.
+
+The example is link-based credential-harvesting phishing email with elements of spear-phishing (personalization) and tracking. It’s designed to trick recipients into clicking a fake cloud-storage link and 
+signing in — handing their credentials to the attacker.
+
+The attackers may use fake addresses like
+Fake address (phishing example): google-support@drive-google.com
+Real address (legitimate Google Drive): no-reply@drive.google.com
+
