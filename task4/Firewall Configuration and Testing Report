@@ -1,0 +1,21 @@
+Firewall Configuration and Testing Report
+
+Objective:
+To configure the Windows firewall to block and allow specific ports and test its effect on network traffic.
+Steps Performed
+       Opened Firewall Tool
+       Windows Firewall with Advanced Security was launched to view and manage rules.
+       Listed Current Rules
+       Used the PowerShell command to list all firewall rules.
+       Verified existing inbound and outbound rules.
+       Blocked Inbound Ports
+       Port 23 (Telnet): Created a new inbound rule using the GUI to block TCP port 23.
+       Port 80 (HTTP): Created a new inbound rule using the GUI to block TCP port 80.
+Tested the Rules
+Attempted local and remote connections to ports 23 & 80.
+
+Result: 
+Connections were denied, confirming the rules worked.
+Removed Test Rules
+Deleted the inbound rules for ports 23 & 80 using the GUI to restore the original state.
+Documentation
