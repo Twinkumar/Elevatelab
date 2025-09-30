@@ -1,0 +1,13 @@
+Steps Performed
+Opened Wireshark and started a capture on the active network interface.
+Generated traffic by browsing a website.
+Stopped the capture after ~1 minute.
+Applied filters (dns, tcp, http) to view specific protocols.
+Identified at least 3 protocols: DNS, TCP, and HTTP/HTTPS.
+Exported the capture as a .pcap file.
+Summarized findings with packet details.
+
+Findings
+DNS: Resolved domain names (e.g., google.com → IP).
+TCP: Observed 3-way handshake (SYN, SYN/ACK, ACK).
+HTTP: Captured GET requests and responses from websites.
