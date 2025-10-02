@@ -1,0 +1,13 @@
+Malicious extensions can:
+        Steal sensitive data (passwords, credit card info).
+        Track browsing history.
+        Show unwanted ads/pop-ups.
+        Redirect to phishing websites.
+        Install hidden malware or cryptominers
+After restarting the broswer it work's normally usual
+
+Browser: Microsoft Edge
+Extensions found: Google Docs Offline
+Action: Kept (safe, trusted, useful for offline Google Docs)
+Removed: None
+Final status: No malicious or unnecessary extensions detected
