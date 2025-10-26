@@ -1,0 +1,52 @@
+🔐 Password Strength Analyzer & Custom Wordlist
+GeneratorInternship Project by Twin kumar S  
+Paavai Engineering College — B.E. Cybersecurity
+🧩 OverviewThe Password Strength Analyzer & Custom Wordlist Generator is a Python-based tool designed for ethical cybersecurity research.
+It evaluates password strength using the zxcvbn library (when available) and generates targeted wordlists for auditing or penetration testing based on user-provided data such as names, dates, and keywords.
+This project demonstrates applied knowledge of password entropy, attacker modeling, and secure wordlist-based testing methodologies.
+⚙ Key Features🔍 Password Analysis: Evaluate password strength with zxcvbn or a built-in entropy calculator.
+🧮 Custom Wordlist Generator: Combine user data (names, pets, dates) with variations such as capitalization, leetspeak, and appended years.💾
+Exportable Output: Save generated wordlists as .txt for use with tools like john or hashcat. Ethics First: Built for educational and authorized testing environments only.
+💻 CLI-First Design: Simple command-line interface with clear, scriptable commands.
+
+🧰 Tech Stack
+
+| Component        | Technology                                                      |
+| ---------------- | --------------------------------------------------------------- |
+| Language         | Python 3.8+                                                     |
+| Libraries        | zxcvbn (optional), argparse, itertools, nltk (optional) |
+| Output           | Plain .txt wordlists                                            |
+| OS Compatibility | Windows / Linux / macOS                                         |
+
+🚀 Installation & Setup
+1. Create (optional) and activate a virtual environment
+bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux/macOS
+source venv/bin/activate
+
+2. Install dependencies
+bash
+pip install zxcvbn nltk
+# If you only need the analyzer without zxcvbn, it's optional:
+# pip install nltk
+
+⚙ Usage
+All commands assume you are in the project folder and your Python environment is active.
+
+1) Analyze a password (CLI)
+bash
+python password_strength_wordlist_tool.py analyze --password "MyP@ssw0rd123"
+
+Example output
+--- Password Analysis ---
+zxcvbn score: 2 / 4
+Estimated crack time (offline_fast_hashing): less than a second
+Entropy: 58.99 bits
+Strength: Reasonable
+Feedback: ['Add another word or two...', "...'@' instead of 'a' doesn't help much"]
+
+
+
